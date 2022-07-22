@@ -67,12 +67,9 @@ img {
 .icons i {
   color: rgb(38, 29, 71);
   padding: 16px;
-  border-radius: 50%;
-  margin-bottom: 15px;
 }
 
 .column {
-  flex: 20%;
   padding: 2px;
 }
 
@@ -117,4 +114,80 @@ img:hover {
 
 .card:hover {
   cursor: pointer;
+}
+
+.iconClass {
+  display: flex;
+  flex-direction: row;
+}
+
+.mostView {
+  display: flex;
+  flex-direction: row;
+}
+
+.chiefs {
+  display: flex;
+  flex-direction: row;
+}
+
+.contactUs {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: 1350px) {
+  #detail {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .iconClass {
+    flex-direction: column;
+  }
+
+  .mostView {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: auto;
+    width: 400px;
+  }
+
+  .chiefs {
+    flex-direction: column;
+  }
+
+  .imgChief {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+  }
+
+  .imgMax {
+    width: 500px;
+    margin: auto;
+  }
+
+  .contactUs {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin: auto;
+    width: 340px;
+  }
+  .imgChief {
+    width: 340px;
+    height: 340px;
+    margin: auto;
+  }
+  .imgMax {
+    width: 340px;
+    margin: auto;
+  }
 }

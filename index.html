@@ -49,12 +49,12 @@
     </header>
     <main>
       <!-- icons -->
-      <section id="services" class="icons d-flex flex-wrap">
-        <div class="d-flex flex-row text-center p-3 all-bg">
+      <section id="services" class="icons">
+        <div class="iconClass text-center p-3 all-bg">
           <div>
             <i class="bi bi-cup fs-1 flex-grow-1"></i>
             <div>
-              <h3>Cup</h3>
+              <h3>Coffee</h3>
               <p class="fs-6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
                 voluptas.
@@ -96,7 +96,7 @@
 
       <!-- recipe 1 -->
       <section id="about" class="flex-cols all-bg">
-        <div class="row gx-0">
+        <div class="row row-cols-md-2 row-cols-1 row-cols-sm-1 gx-0">
           <div class="col p-0">
             <div class="col">
               <img class="w-100 h-100" src="img/about1.jpeg" alt="" />
@@ -106,18 +106,18 @@
             <div
               class="col bg-secondary h-100 d-flex justify-content-center align-items-center flex-column"
             >
-              <h2 class="text-white">Food Recipe</h2>
+              <h2 class="text-white m-2">Food Recipe</h2>
               <p class="text-white text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deleniti, enim.
               </p>
-              <button class="btn btn-outline-light">Read More</button>
+              <button class="btn btn-outline-light p-2 m-2">Read More</button>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- gallery -->
+      <!-- Most Liked -->
       <section id="gallery" class="flex-cols all-bg">
         <header id="gallery-section">
           <h2 class="text-center pt-3">Most Liked Recipes</h2>
@@ -126,20 +126,22 @@
             Exercitationem, delectus?
           </p>
         </header>
-        <div class="row flex-row gx-0">
-          <div class="col p-0">
+        <div
+          class="row flex-row gx-0 row-cols-lg-4 row-cols-md-2 row-cols-1 row-cols-sm-1"
+        >
+          <div class="col p-0 imgMax">
             <img src="img/1.jpg" alt="" />
             <img src="img/2.jpg" alt="" />
           </div>
-          <div class="col p-0">
+          <div class="col p-0 imgMax">
             <img src="img/3.jpg" alt="" />
             <img src="img/4.jpg" alt="" />
           </div>
-          <div class="col p-0">
+          <div class="col p-0 imgMax">
             <img src="img/5.jpg" alt="" />
             <img src="img/6.jpg" alt="" />
           </div>
-          <div class="col p-0">
+          <div class="col p-0 imgMax">
             <img src="img/7.jpg" alt="" />
             <img src="img/8.jpg" alt="" />
           </div>
@@ -147,7 +149,7 @@
       </section>
 
       <!-- Most Viewed -->
-      <section id="foods" class="rooms all-bg">
+      <section id="foods" class="all-bg">
         <header class="section-header text-center section-padding">
           <h2>Most Viewed Recipes</h2>
           <p>
@@ -155,7 +157,7 @@
             laudantium.
           </p>
         </header>
-        <div class="flex-items">
+        <div class="flex-items mostView">
           <div class="p-2">
             <div class="card">
               <img class="p-0" src="img/55.jpg" alt="" />
@@ -188,7 +190,9 @@
 
       <!-- recipe 2 -->
       <section id="about" class="flex-cols all-bg">
-        <div class="row gx-0 flex-row-reverse">
+        <div
+          class="row flex-row-reverse row-cols-md-2 row-cols-1 row-cols-sm-1 gx-0"
+        >
           <div class="col p-0">
             <div class="col">
               <img class="w-100 h-100" src="img/about2.jpeg" alt="" />
@@ -198,12 +202,12 @@
             <div
               class="col bg-secondary h-100 d-flex justify-content-center align-items-center flex-column"
             >
-              <h2 class="text-white">Recipe of Food</h2>
+              <h2 class="text-white m-2">Recipe of Food</h2>
               <p class="text-white text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deleniti, enim.
               </p>
-              <button class="btn btn-outline-light">Read More</button>
+              <button class="btn btn-outline-light m-2">Read More</button>
             </div>
           </div>
         </div>
@@ -218,20 +222,20 @@
             laudantium.
           </p>
         </header>
-        <div class="flex-items">
-          <div>
+        <div class="flex-items chiefs">
+          <div class="imgChief">
             <img src="img/p1.jpeg" alt="" />
             <h2>Chief</h2>
             <p>Lorem, ipsum.</p>
           </div>
 
-          <div>
+          <div class="imgChief">
             <img src="img/p2.jpeg" alt="" />
             <h2>Chief</h2>
             <p>Lorem, ipsum.</p>
           </div>
 
-          <div>
+          <div class="imgChief">
             <img src="img/p3.jpeg" alt="" />
             <h2>Chief</h2>
             <p>Lorem, ipsum.</p>
@@ -240,16 +244,14 @@
       </section>
 
       <!-- contact -->
-      <section id="contact" class="contact flex-columns all-bg pb-4">
-        <div class="row gx-0">
-          <div class="column">
-            <div class="column-1">
-              <img src="img/contact.jpeg" alt="" />
-            </div>
+      <section id="contact" class="contact flex-items all-bg pb-3">
+        <div class="contactUs gx-0">
+          <div class="col d-flex justify-content-center align-items-center">
+            <img src="img/contact.jpeg" alt="" />
           </div>
-          <div class="column">
+          <div class="col">
             <div class="form-group">
-              <div class="ps-1 pb-1 pe-1">
+              <div class="ps-1 pb-1 pe-1 fs-5">
                 <label for="name">Name</label>
                 <input
                   type="text"
@@ -258,7 +260,7 @@
                   placeholder="Enter name"
                 />
               </div>
-              <div class="ps-1 pb-1 pe-1">
+              <div class="ps-1 pb-1 pe-1 fs-5">
                 <label for="email">Email address</label>
                 <input
                   type="email"
@@ -267,13 +269,12 @@
                   placeholder="name@example.com"
                 />
               </div>
-              <div class="pt-1 ps-1 pe-1">
-                <label for="exampleFormControlTextarea1">Details</label>
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="4"
-                ></textarea>
+              <div class="pt-1 ps-1 pe-1 fs-5">
+                <label for="detail">Details</label>
+                <textarea class="form-control" id="detail" rows="5"></textarea>
+              </div>
+              <div class="pt-3">
+                <button class="pt-2 btn btn-secondary">Send Message</button>
               </div>
             </div>
           </div>
@@ -301,9 +302,7 @@
               ><i class="i bi bi-instagram m-3"></i
             ></a>
 
-            <a
-              href="https://www.upwork.com/search/profiles/?q=G%C3%B6khan%20Turgut&profile=~017de09a93776b1fb7"
-              target="_blank"
+            <a href="https://mgt-movie-app.netlify.app/" target="_blank"
               ><i class="i bi bi-github m-3"></i
             ></a>
           </div>
