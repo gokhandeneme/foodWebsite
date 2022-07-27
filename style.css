@@ -136,6 +136,10 @@ img:hover {
   flex-direction: row;
 }
 
+#detail {
+  height: 150px;
+}
+
 @media (min-width: 1350px) {
   #detail {
     height: 300px;
